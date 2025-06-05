@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Invent Bootstrap Template</title>
+  <title>Index - Futarchy workshop</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-  <!-- Favicons -->
+  <!-- Favicons
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+   <link href="assets/img/bell-solid2.svg" rel="icon">
+  
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -44,7 +45,7 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Workshop</h1><span>.</span>
+        <h1 class="sitename">Workshop</h1><span></span>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -55,12 +56,13 @@
               <!-- <li><a href="#how-we-work">Schedule</a></li> -->
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#contact">Contact</a></li>
+           <li><a href="https://ci.acm.org/2025/attend/">Buy Ticket</a></li>
+         
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
       <a class="btn-getstarted" href="https://docs.google.com/forms/d/1E66PM_aqrZjoeHHstFsw149OOZ3kG8M5Bef3DWJAg0w">Register</a>
-
+      <a class="btn-getstarted d-block d-lg-none" href="https://ci.acm.org/2025/attend/"><span>BuyTicket</span></a>
     </div>
   </header>
 
@@ -88,8 +90,11 @@
              <p class="hero-description mb-4">📅 Monday, August 4, 2025 | 🕐 1pm–5pm       </p>
 
             <div class="cta-wrapper">
-              <a href="https://docs.google.com/forms/d/1E66PM_aqrZjoeHHstFsw149OOZ3kG8M5Bef3DWJAg0w" class="btn btn-primary">Register</a>
+              <a href="https://ci.acm.org/2025/attend/" class="btn btn-primary">Register</a>
+              <a href="https://ci.acm.org/2025/attend/" class="btn btn-primary">Buy Ticket</a>
             </div>
+            
+         
           </div>
 
           <div class="col-lg-6">
@@ -418,8 +423,32 @@
             </div>
           </div> -->
 
+          <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-card popular">
+             
+              <div class="row">
+                <h3 class="col-8">ACM Member:  </h3>
+                <h3 class="col-4">$75</h3>
+              </div>
+              <div class="row">
+                <h3 class="col-8">Non-Member:  </h3>
+                <h3 class="col-4">$100</h3>
+              </div>
+              <div class="row">
+                <h3 class="col-8">Student:  </h3>
+                <h3 class="col-4">$50</h3>
+              </div>
+              
+
+              <a href="https://ci.acm.org/2025/attend/" class="btn btn-light">
+                Buy Ticket Here
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
           <!-- Standard Plan -->
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="pricing-card popular">
               <div class="row">
                 <h3 class="col-8">ACM Member:  </h3>
@@ -433,11 +462,16 @@
                 <h3 class="col-8">Student:  </h3>
                 <h3 class="col-4">$50</h3>
               </div>
+              
              
               
            
             </div>
-          </div>
+             <a href="#" class="btn btn-primary">
+                Buy Now
+                <i class="bi bi-arrow-right"></i>
+              </a>
+          </div> -->
 
           <!-- Premium Plan -->
           <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
@@ -544,43 +578,50 @@
 
         <div class="row">
           <div class="col-lg-12">
-            <div class="form-wrapper" data-aos="fade-up" data-aos-delay="400">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <div class="input-group">
-                      <span class="input-group-text"><i class="bi bi-person"></i></span>
-                      <input type="text" name="name" class="form-control" placeholder="Your name*" required="">
-                    </div>
-                  </div>
-                  <div class="col-md-6 form-group mt-4 mt-lg-0 ">
-                    <div class="input-group">
-                      <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                      <input type="email" class="form-control" name="email" placeholder="Email address*" required="">
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt-3">
-               
-                 
-                  <div class="form-group mt-3">
-                    <div class="input-group">
-                      <span class="input-group-text"><i class="bi bi-chat-dots"></i></span>
-                      <textarea class="form-control" name="message" rows="6" placeholder="Write a message*" required=""></textarea>
-                    </div>
-                  </div>
-                  <div class="my-2">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-                  <div class="text-center">
-                    <button type="submit">Submit Message</button>
-                  </div>
+           <div class="form-wrapper" data-aos="fade-up" data-aos-delay="400">
+  <form action="https://formsubmit.co/sshan02001@gmail.com" method="POST">
+    <!-- Honeypot to prevent spam -->
+    <input type="text" name="_honey" style="display:none">
 
-                </div>
-              </form>
-            </div>
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- BCC -->
+    <input type="hidden" name="_cc" value="duringpan99@gmail.com">
+
+    <!-- Use table template for nice formatting -->
+    <input type="hidden" name="_template" value="table">
+
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-person"></i></span>
+          <input type="text" name="name" class="form-control" placeholder="Your name*" required>
+        </div>
+      </div>
+      <div class="col-md-6 form-group mt-4 mt-lg-0">
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+          <input type="email" name="email" class="form-control" placeholder="Email address*" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="form-group mt-3">
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-chat-dots"></i></span>
+          <textarea name="message" class="form-control" rows="6" placeholder="Write a message*" required></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-3">
+      <button type="submit" class="btn btn-primary">Submit Message</button>
+    </div>
+  </form>
+</div>
+
           </div>
 
         </div>
